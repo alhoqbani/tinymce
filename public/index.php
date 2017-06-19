@@ -1,3 +1,15 @@
+<?php
+function dd(...$data) {
+    die(dump($data));
+}
+if (isset($_POST['submit'])) {
+
+    dd($_POST);
+
+    
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +26,15 @@
     <script src="./js/tinymce/tinymce.js"></script>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<textarea id="mytinymce">Hello, World!</textarea>
+<div class="container">
+    <div class="row col-md-8 col-md-offset-2">
+        <form action="index.php" method="POST">
+            <h1>Hello, world!</h1>
+            <textarea id="mytinymce">Hello, World!</textarea>
+            <input type="submit" class="btn btn-success btn-block" name="submit">
+        </form>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
