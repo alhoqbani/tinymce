@@ -30,7 +30,27 @@ if (isset($_POST['submit'])) {
     <div class="row col-md-8 col-md-offset-2">
         <form action="index.php" method="POST">
             <h1>Hello, world!</h1>
-            <textarea id="mytinymce">Hello, World!</textarea>
+            <textarea id="mytinymce" name="tinymce">Hello, World!</textarea>
+            <input type="submit" class="btn btn-success btn-block" name="submit">
+        </form>
+    </div>
+</div>
+<hr>
+<hr>
+    <div class="row col-md-8 col-md-offset-2">
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <h1>Image</h1>
+            <textarea id="tinymce" name="tinymce">Hello, World!</textarea>
+            <input type="submit" class="btn btn-success btn-block" name="submit">
+        </form>
+    </div>
+
+<hr>
+<hr>
+    <div class="row col-md-8 col-md-offset-2">
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <h1>Image</h1>
+            <textarea id="editor" name="tinymce">Hello, World!</textarea>
             <input type="submit" class="btn btn-success btn-block" name="submit">
         </form>
     </div>
